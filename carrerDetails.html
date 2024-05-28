@@ -66,7 +66,7 @@
       <div class="loderitem loderitem-4"></div>
     </div>
     <div id="mainPanel" style="display: none">
-      <main class="container">
+      <main id="main">
         <!-- ======= Header ======= -->
         <style>
           #header {
@@ -89,30 +89,41 @@
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-            <nav id="navbar" class="navbar"> 
+            <nav id="navbar" class="navbar">
               <ul>
-              <li><a class="nav-link  menu_item scrollto " href="index.html">Home</a></li>
-              <!-- <li><a class="nav-link scrollto" href="courses.html">Course</a></li> -->
-              <li>
-                <a class="nav-link scrollto menu_item " href="services.html">Services</a>
-              </li>
-              <li>
-                <a class="nav-link scrollto menu_item" href="about.html">About</a>
-              </li>
-              <li>
-                <a class="nav-link scrollto menu_item" href="carrer.html">Career</a>
-              </li>
-              <li>
-                <a class="nav-link scrollto menu_item " href="contact.html">Contact</a>
-              </li>
-            </ul>
+                <li>
+                  <a class="nav-link menu_item scrollto" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <!-- <li><a class="nav-link scrollto" href="courses.html">Course</a></li> -->
+                <li>
+                  <a class="nav-link scrollto menu_item" href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link scrollto menu_item" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link scrollto menu_item" href="carrer.html"
+                    >Career</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link scrollto menu_item" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
               <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
             <!-- .navbar -->
           </div>
         </header>
         <!-- End Header -->
-        
         <!-- Career Details -->
         <div class="career_details">
           <div class="carer_img_part">
@@ -122,7 +133,10 @@
             />
           </div>
           <div class="Career_info_part">
-            <h1 class="career_subject"><i class="fa-regular fa-hand-point-right"></i> Job Position : Web Development</h1>
+            <h1 class="career_subject">
+              <i class="fa-regular fa-hand-point-right"></i> Job Position : Web
+              Development
+            </h1>
             <h2>Requirements</h2>
 
             <h4>Education</h4>
@@ -148,12 +162,11 @@
               <li>Strong communication and collaboration skills.</li>
             </ul>
 
-            <h3>Salary :  <span>Negotiable</span></h3>
-           
-            <h3>Workplace :  <span>Work from home</span></h3>
-           
-            <h3>Employment  : <span>Full Time</span></3>
-            
+            <h3>Salary : <span>Negotiable</span></h3>
+
+            <h3>Workplace : <span>Work from home</span></h3>
+
+            <h3>Employment : <span>Full Time</span></h3>
           </div>
         </div>
         <!-- Apply form -->
@@ -210,30 +223,55 @@
 
               <form action="" class="form-holder" autocomplete="off">
                 <h3 class="title">Fill The Apply Form</h3>
-                <div class="input-container">
-                  <input type="text" name="name" class="input" />
-                  <label for="">Name</label>
-                  <span>Name</span>
+                <div class="mb-3">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label text-light"
+                    >Applicant Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                  />
                 </div>
-                <div class="input-container">
-                  <input type="email" name="email" class="input" />
-                  <label for="">Email</label>
-                  <span>Email</span>
+                <div class="mb-3">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label text-light"
+                    >Applicant Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                  />
                 </div>
-                <div class="input-container">
-                  <input type="tel" name="phone" class="input" />
-                  <label for="">Phone</label>
-                  <span>Phone</span>
+                <div class="mb-3">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label text-light"
+                    >Applicant Phone No.</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                  />
                 </div>
-                <div class="input-container textarea">
-                  <textarea name="message" class="input"></textarea>
-                  <label for="">Shot Description</label>
-                  <span>Shot Description</span>
+                <div class="mb-3">
+                  <label
+                    for="validationCustomUsername"
+                    class="form-label text-light"
+                    >Short Description</label
+                  >
+                  <textarea class="form-control"></textarea>
                 </div>
-                <div class="input-container focus">
-                  <input type="file" name="cv" class="input_special" />
-                  <label for="">Upload CV</label>
-                  <span>Upload CV</span>
+                <div class="mb-3">
+                  <label for="formFile" class="form-label text-light"
+                    >Upload Resume</label
+                  >
+                  <input class="form-control" type="file" id="formFile" />
                 </div>
                 <input type="submit" value="Send" class="btn" />
               </form>
@@ -329,13 +367,9 @@
               </div>
               <div class="footer-social-icon for_mobile">
                 <span>Follow us</span>
-                <a href="#"
-                  ><i class="fab fa-facebook-f facebook-bg"></i
-                ></a>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                 <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                <a href="#"
-                  ><i class="fab fa-google-plus-g google-bg"></i
-                ></a>
+                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
               </div>
               <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                 <div class="footer-widget">
@@ -356,7 +390,6 @@
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -367,7 +400,9 @@
                 <div class="copyright-text">
                   <p>
                     Copyright &copy; 2024, All Right Reserved
-                    <a class="text-danger copyright-area-name">Hello Coders BD</a>
+                    <a class="text-danger copyright-area-name"
+                      >Hello Coders BD</a
+                    >
                   </p>
                 </div>
               </div>
